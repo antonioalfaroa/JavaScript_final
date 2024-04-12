@@ -1,0 +1,27 @@
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+    align-items: center;
+    background-color: none;
+}
+.map-inner-container {
+  width: 80%; 
+  height: 80%; 
+  position: relative; 
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.gm-style {
+  margin-left: -100px; 
+}

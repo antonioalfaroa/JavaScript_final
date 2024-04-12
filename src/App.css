@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to top, #ffffff, #ccf2ff); 
+}
+
+.app-title {
+  top: 20px; 
+  transition: opacity 0.3s ease; 
+  padding: 50px;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.app-title.hidden {
+  opacity: 0; 
+}
+
+.widgets {
+  display: flex;
+  justify-content: center;
+}
+
+.widget {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+}
+
+.widget img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.widget:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.widget-overlay {
+  margin-top: 20px;
+}
+
+.widget-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.widget-content h2 {
+  margin-top: 0;
+}
+
+.widget-content button {
+  margin-top: 10px;
+}
